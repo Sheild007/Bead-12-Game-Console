@@ -5,6 +5,8 @@
 
 The BEAD 12 project is a console-based bead game implemented in C++. The game features a board where two players, Green and Red, can place their beads and perform moves according to specific rules. The project demonstrates basic principles of game development, including board management, user interaction, and game logic. This document provides a comprehensive overview of the project's features, functionality, and underlying computer intelligence.
 
+![bead12](finnal/bead12.PNG)
+
 ## Features
 
 - **Console-based Interface**: The game runs in a console window with text-based graphics.

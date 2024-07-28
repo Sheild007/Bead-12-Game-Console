@@ -1,0 +1,1 @@
+# Bead 12 console

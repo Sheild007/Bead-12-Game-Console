@@ -1,5 +1,5 @@
 
-# BEAD 12 Project - Bead Game
+# BEAD 12 Game
 
 ## Introduction
 
@@ -16,6 +16,47 @@ The BEAD 12 project is a console-based bead game implemented in C++. The game fe
 - **Score Display**: Keeps track of and displays player scores.
 - **Game State Saving**: The game saves its state after every move, allowing players to resume the game from the last saved state.
 - **Load Game Feature**: Players can load a previously saved game to continue playing from where they left off.
+
+## Rules and Setup
+
+### Setup
+
+- **Board Configuration**: The board consists of 25 slots arranged in a 5x5 grid.
+- **Initial Placement**:
+  - **Player One** (e.g., Red) places their beads on either the upper or lower half of the board but not both.
+  - **Player Two** (e.g., Green) places their beads on the opposite half of the board to Player One.
+  - The center position (slot 13) remains empty at the start of the game.
+
+### How to Play
+
+1. **Starting the Game**:
+   - The game begins with a coin toss to decide the first player.
+   - The player who wins the toss moves first.
+
+2. **Player Turns**:
+   - Each player alternates turns.
+   - On their turn, a player moves one of their beads.
+
+3. **Movement**:
+   - Beads can be moved along vertical or horizontal lines on the board.
+   - A bead can only move to an adjacent empty position directly next to it (either vertically or horizontally).
+
+4. **Eliminating Beads**:
+   - To eliminate an opponent’s bead, a player must move their bead to an empty position directly after an opponent’s bead.
+   - The bead being crossed over is removed from the board.
+   - The player's bead lands on the empty position right after the opponent’s bead.
+
+5. **Examples of Movement and Elimination**:
+   - **Initial Move**: If Player Two (Green) moves a bead to the center position, this is a valid move since it’s the only available position initially.
+   - **Eliminating an Opponent’s Bead**: If Player One (Red) moves their bead to an empty position right after a Green bead, the Green bead is eliminated and removed from the board.
+
+6. **Repositioning**:
+   - After an elimination, the player’s bead is placed on the new position, and the opponent's bead is removed from the board.
+
+### Winning
+
+- **Objective**: A player wins by eliminating all of the opponent's beads before the opponent.
+- **End of Game**: The game ends when one player has no beads remaining on the board. The other player is declared the winner.
 
 ## Console Settings
 
@@ -131,4 +172,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Libraries**: Utilizes the Windows API for console manipulation.
 - **Inspiration**: Inspired by classic board games and console-based applications.
+
+---
 
